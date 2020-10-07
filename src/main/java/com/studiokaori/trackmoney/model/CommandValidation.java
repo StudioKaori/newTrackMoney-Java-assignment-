@@ -7,20 +7,18 @@ import java.util.Scanner;
  */
 public class CommandValidation {
     private Scanner scanner;
-    private int numberOfCommands;
 
     /**
      * Create a parser to read from the terminal window.
      */
     public CommandValidation(int numberOfCommands) {
         scanner = new Scanner(System.in);
-        this.numberOfCommands = numberOfCommands;
     }
 
     /**
      * @return int
      */
-    public int getCommand() throws IllegalArgumentException, NumberFormatException {
+    public int getCommand(int numberOfCommands) throws IllegalArgumentException, NumberFormatException {
 
         System.out.print("> ");
 

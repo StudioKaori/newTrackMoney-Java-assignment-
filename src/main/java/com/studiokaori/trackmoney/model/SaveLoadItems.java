@@ -55,14 +55,16 @@ public class SaveLoadItems {
 
         String json = createJsonString(items);
 
+
+        BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(fileName));
         File file = new File(fileName);
+
         if (!file.canWrite()) {
 
             file.setWritable(true);
 
         }
 
-        BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(file, true));
         bufferedWriter.write(json);
         bufferedWriter.close();
 

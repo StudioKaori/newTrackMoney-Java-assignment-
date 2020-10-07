@@ -75,11 +75,11 @@ public abstract class Item {
         return date;
     }
 
-    public String getFormattedDate() {
-
-        return new SimpleDateFormat("yyyy-MM-dd").format(date);
-
-    }
+//    public String getFormattedDate() {
+//
+//        return new SimpleDateFormat("yyyy-MM-dd").format(date);
+//
+//    }
 
     public void setDate(Date date) {
         this.date = date;
@@ -102,10 +102,13 @@ public abstract class Item {
         this.category = category;
     }
 
+    @JsonIgnore
     public abstract String getFormattedString(String format);
 
+    @JsonIgnore
     public abstract String getFormattedString();
 
+    @JsonIgnore
     public abstract String getFormattedStringForAll();
 
 

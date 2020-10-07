@@ -27,7 +27,7 @@ public abstract class Controller {
 
     }
 
-    public void printFirstInstruction() {
+    protected void printFirstInstruction() {
 
         System.out.println("Please input the menu number.");
 
@@ -36,24 +36,20 @@ public abstract class Controller {
     protected int getInput() {
 
         // Reading commands and execute them until the tracker is over.
-        boolean finished = false;
         int commandNumber = 0;
 
-        while (!finished) {
+        try {
 
-            try {
+            commandNumber = commandValidation.getCommand(commandMenu.size());
 
-                commandNumber = commandValidation.getCommand();
-                finished = true;
+        } catch (IllegalArgumentException e) {
 
-            } catch (IllegalArgumentException e) {
-
-                System.out.println("Invalid menu number.");
-                System.out.println("Please input menu number.");
-
-            }
+            System.out.println("Invalid menu number.");
+            System.out.println("Please input menu number.");
+            getInput();
 
         }
+
         return commandNumber;
     }
 
@@ -68,7 +64,7 @@ public abstract class Controller {
 
     protected void backToMainMenu() {
 
-        new MainController(items);
+        new MainController(items).run();
 
     }
 

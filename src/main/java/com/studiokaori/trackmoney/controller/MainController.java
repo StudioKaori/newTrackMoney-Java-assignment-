@@ -20,8 +20,8 @@ import java.util.List;
 
 public class MainController extends Controller {
 
-    SaveLoadItems saveLoadItems;
-    String savedItemFileName;
+    private SaveLoadItems saveLoadItems;
+    private String savedItemFileName;
 
     /**
      *
@@ -32,7 +32,6 @@ public class MainController extends Controller {
 
         super();
         mainInit();
-        savedItemFileName = "savedItems.dat";
         loadSavedItemsToMain();
 
         run();
@@ -51,6 +50,7 @@ public class MainController extends Controller {
     private void mainInit() {
 
         saveLoadItems = new SaveLoadItems();
+        savedItemFileName = "savedItems.dat";
 
     }
 
@@ -58,6 +58,8 @@ public class MainController extends Controller {
      *
      */
     public void run() {
+
+        printFirstInstruction();
 
         // initialize menu command
         commandMenu = new ArrayList<>();
@@ -67,9 +69,8 @@ public class MainController extends Controller {
         commandMenu.add("Expense control");
         commandMenu.add("Save and Quit");
         commandValidation = new CommandValidation(commandMenu.size());
-
-        printFirstInstruction();
         showCommandList();
+        
         chooseMainMenu();
 
     }
@@ -128,10 +129,6 @@ public class MainController extends Controller {
                 saveAndQuit();
                 break;
 
-            case 5:
-                //todo expense control (bar chart)
-                break;
-
         }
     }
 
@@ -176,8 +173,6 @@ public class MainController extends Controller {
             System.out.println("Cannot save items to the file. Please try again.");
             e.printStackTrace();
         }
-
-        //todo implement quit function
 
     }
 

@@ -28,6 +28,7 @@ public class EditController extends EditItemController {
         System.out.println("Please input an item number you want to edit or delete.");
     }
 
+    @Override
     public void run() {
 
         // initialize menu command
@@ -182,7 +183,7 @@ public class EditController extends EditItemController {
             System.out.println("Unexpected error happened. Please try again.");
         }
 
-        run();
+        backToMainMenu();
 
     }
 

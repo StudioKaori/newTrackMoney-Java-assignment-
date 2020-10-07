@@ -11,7 +11,7 @@ import java.util.List;
 
 public class ShowItemController extends Controller {
 
-    SortItems sortItems;
+    private SortItems sortItems;
 
     public ShowItemController(List<Item> items) {
 
@@ -21,6 +21,7 @@ public class ShowItemController extends Controller {
 
     }
 
+    @Override
     public void run() {
 
         // initialize menu command
@@ -202,9 +203,5 @@ public class ShowItemController extends Controller {
 
         return printCount;
     }
-
-    //todo limit the listed item only current month
-
-    //todo implement previous month
 
 }

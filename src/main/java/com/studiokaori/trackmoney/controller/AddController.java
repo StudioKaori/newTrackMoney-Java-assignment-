@@ -31,7 +31,7 @@ public class AddController extends EditItemController {
         commandMenu.add("Expenses");
         commandMenu.add("Income");
         commandMenu.add("Cancel");
-        commandValidation = new CommandValidation(commandMenu.size());
+        commandValidation = new CommandValidation();
 
         printFirstInstruction();
         showCommandList();

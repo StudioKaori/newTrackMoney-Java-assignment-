@@ -11,7 +11,7 @@ public class CommandValidation {
     /**
      * Create a parser to read from the terminal window.
      */
-    public CommandValidation(int numberOfCommands) {
+    public CommandValidation() {
         scanner = new Scanner(System.in);
     }
 

@@ -33,7 +33,7 @@ public class ShowItemController extends Controller {
         commandMenu.add("Sort by amount");
         commandMenu.add("Sort by amount Dec");
         commandMenu.add("Back to main menu");
-        commandValidation = new CommandValidation(commandMenu.size());
+        commandValidation = new CommandValidation();
 
         printFirstInstruction();
         showCommandList();
@@ -88,7 +88,7 @@ public class ShowItemController extends Controller {
         commandMenu.add("Show Only Expenses");
         commandMenu.add("Show Only Income");
         commandMenu.add("Back to main menu");
-        commandValidation = new CommandValidation(commandMenu.size());
+        commandValidation = new CommandValidation();
 
         showCommandList();
         chooseMode();

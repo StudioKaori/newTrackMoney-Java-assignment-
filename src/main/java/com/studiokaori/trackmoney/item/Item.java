@@ -2,6 +2,7 @@ package com.studiokaori.trackmoney.item;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonTypeInfo;
 
 import java.text.ParseException;
@@ -75,12 +76,7 @@ public abstract class Item {
         return date;
     }
 
-//    public String getFormattedDate() {
-//
-//        return new SimpleDateFormat("yyyy-MM-dd").format(date);
-//
-//    }
-
+    @JsonProperty
     public void setDate(Date date) {
         this.date = date;
     }

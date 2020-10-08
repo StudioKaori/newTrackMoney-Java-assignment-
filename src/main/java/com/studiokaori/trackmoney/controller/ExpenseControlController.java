@@ -111,7 +111,7 @@ public class ExpenseControlController extends Controller {
         // show menu option
         commandMenu = new ArrayList<>();
         commandMenu.add("Back to main menu");
-        commandValidation = new CommandValidation(commandMenu.size());
+        commandValidation = new CommandValidation();
 
         showCommandList();
         chooseMode();

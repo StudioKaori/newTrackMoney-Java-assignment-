@@ -54,9 +54,7 @@ public class MainController extends Controller {
 
     }
 
-    /**
-     *
-     */
+    @Override
     public void run() {
 
         printFirstInstruction();
@@ -68,9 +66,9 @@ public class MainController extends Controller {
         commandMenu.add("Edit Item (edit, delete)");
         commandMenu.add("Expense control");
         commandMenu.add("Save and Quit");
-        commandValidation = new CommandValidation(commandMenu.size());
+        commandValidation = new CommandValidation();
         showCommandList();
-        
+
         chooseMainMenu();
 
     }

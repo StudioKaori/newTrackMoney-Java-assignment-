@@ -35,10 +35,10 @@ public abstract class EditItemController extends Controller {
         } else if (item instanceof IncomeItem) {
             commandMenu = IncomeCategories.incomeCategories;
         }
-        
+
         // create and show item categories
         showCommandList();
-        commandValidation = new CommandValidation(commandMenu.size());
+        commandValidation = new CommandValidation();
 
         int chosenCategory = getInput();
         item.setCategory(chosenCategory);

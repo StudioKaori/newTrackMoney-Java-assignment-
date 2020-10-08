@@ -34,7 +34,7 @@ public class EditController extends EditItemController {
         // initialize menu command
         commandMenu = new ArrayList<>();
         items.stream().forEach(item1 -> commandMenu.add(item1.getFormattedString()));
-        commandValidation = new CommandValidation(commandMenu.size());
+        commandValidation = new CommandValidation();
 
         printFirstInstruction();
         showCommandList();
@@ -58,7 +58,7 @@ public class EditController extends EditItemController {
         commandMenu.add("Edit");
         commandMenu.add("Delete");
         commandMenu.add("Back to main menu");
-        commandValidation = new CommandValidation(commandMenu.size());
+        commandValidation = new CommandValidation();
         showCommandList();
 
         //get command, edit, remove or back to menu
@@ -94,7 +94,7 @@ public class EditController extends EditItemController {
         commandMenu.add("Edit amount");
         commandMenu.add("Back to edit menu");
         commandMenu.add("Back to main menu");
-        commandValidation = new CommandValidation(commandMenu.size());
+        commandValidation = new CommandValidation();
         showCommandList();
 
 

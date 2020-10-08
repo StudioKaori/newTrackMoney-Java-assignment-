@@ -6,8 +6,7 @@ public class Main {
 
     public static void main(String[] args) {
 
-        // #1 added comment here for git pull test
-        // #2 changed more for git test!!
+        // added comment here for git pull test
         MainController mainController = new MainController();
 
     }

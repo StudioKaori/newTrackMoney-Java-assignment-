@@ -6,7 +6,6 @@ import java.util.stream.Collectors;
 
 public class SortItems {
 
-    //todo implement sort
 
     public List<Item> sortByDate(List<Item> items) {
 
@@ -22,6 +21,7 @@ public class SortItems {
 
     }
 
+    //ask TA, both amount and date don't work
     public List<Item> sortByAmount(List<Item> items) {
 
         Comparator<Item> comparator = Comparator.comparing(Item::getAmount);

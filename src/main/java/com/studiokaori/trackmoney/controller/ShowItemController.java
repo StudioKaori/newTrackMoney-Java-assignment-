@@ -103,7 +103,6 @@ public class ShowItemController extends Controller {
         switch (numOfMode) {
             case 0:
                 // All
-                items = sortItems.sortByName(items);
                 printCount = printAll();
                 break;
 

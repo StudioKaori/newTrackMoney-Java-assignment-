@@ -7,7 +7,7 @@ public class Main {
     public static void main(String[] args) {
 
         // added comment here for git pull test
-        MainController mainController = new MainController();
+        new MainController().run();
 
     }
 }

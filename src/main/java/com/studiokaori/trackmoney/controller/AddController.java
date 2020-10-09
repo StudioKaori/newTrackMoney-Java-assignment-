@@ -98,6 +98,7 @@ public class AddController extends EditItemController {
     protected void setAmountToItem(Item item) {
 
         super.setAmountToItem(item);
+        System.out.println("The item is registered with today's date.");
         System.out.println("Item was successfully registered.");
         System.out.println(item);
         backToMainMenu();

@@ -34,8 +34,6 @@ public class MainController extends Controller {
         mainInit();
         loadSavedItemsToMain();
 
-        run();
-
     }
 
     // This runs when other controllers call mainController.
@@ -170,6 +168,10 @@ public class MainController extends Controller {
             System.out.println("Cannot save items to the file. Please try again.");
             e.printStackTrace();
         }
+
+        System.out.println("Items successfully saved.");
+        System.out.println("Bye!");
+        System.exit(0);
 
     }
 

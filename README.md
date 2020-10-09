@@ -1,6 +1,6 @@
 # Track Money
 
-Track Money is a simple money tracker. You can follow all expense(s) and income(s).
+Track Money is a simple money tracker. You can follow all expenses and incomes.
 
 ## Installation
 

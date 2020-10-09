@@ -1,0 +1,10 @@
+{"@class":"com.studiokaori.trackmoney.item.ExpenseItem","name":"hospital","amount":300,"date":1601115809074,"category":2}
+{"@class":"com.studiokaori.trackmoney.item.IncomeItem","name":"allowance","amount":3000,"date":1601315809074,"category":1}
+{"@class":"com.studiokaori.trackmoney.item.ExpenseItem","name":"PC","amount":2000,"date":1601415809074,"category":1}
+{"@class":"com.studiokaori.trackmoney.item.IncomeItem","name":"Salary","amount":31000,"date":1601589600000,"category":0}
+{"@class":"com.studiokaori.trackmoney.item.ExpenseItem","name":"Bus ticket","amount":60,"date":1601715809074,"category":4}
+{"@class":"com.studiokaori.trackmoney.item.ExpenseItem","name":"bread","amount":50,"date":1601815809074,"category":0}
+{"@class":"com.studiokaori.trackmoney.item.ExpenseItem","name":"Disney land tickets","amount":800,"date":1601815809074,"category":3}
+{"@class":"com.studiokaori.trackmoney.item.ExpenseItem","name":"Education","amount":400,"date":1601815809074,"category":6}
+{"@class":"com.studiokaori.trackmoney.item.ExpenseItem","name":"Loan","amount":8000,"date":1601815809074,"category":5}
+{"@class":"com.studiokaori.trackmoney.item.ExpenseItem","name":"karaoke","amount":1000,"date":1602219444130,"category":3}

@@ -3,20 +3,20 @@ package com.studiokaori.trackmoney.model;
 import java.util.Scanner;
 
 /**
- *
+ * This class checks if the command number is valid or not.
  */
 public class CommandValidation {
     private Scanner scanner;
 
-    /**
-     * Create a parser to read from the terminal window.
-     */
     public CommandValidation() {
         scanner = new Scanner(System.in);
     }
 
     /**
-     * @return int
+     * If command is not valid, throw exception
+     *
+     * @return int command number
+     * @throws IllegalArgumentException is thrown when the command is not valid.
      */
     public int getCommand(int numberOfCommands) throws IllegalArgumentException, NumberFormatException {
 

@@ -4,6 +4,13 @@ import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonTypeInfo;
 import com.fasterxml.jackson.annotation.JsonTypeName;
 
+/**
+ * This class represents expense item.
+ *
+ * @author Kaori Persson
+ * @version 2020.09
+ */
+
 // Jackson Polymorphic Deserialization annotation
 @JsonTypeInfo(use = JsonTypeInfo.Id.CLASS)
 @JsonTypeName("ExpenseItem")
@@ -19,7 +26,7 @@ public class ExpenseItem extends Item {
     }
 
     @Override
-    public String getFormattedStringForAll() {
+    public String getFormattedStringToShowAllIncomeExpense() {
 
         String format = " %tY-%tm-%td | %-14s | %-30s | %,11d |             |";
         return getFormattedString(format);
@@ -49,7 +56,7 @@ public class ExpenseItem extends Item {
 
     // return negative amount to calculate
     @Override
-    public int getAmountToCalc() {
+    public int getAmountToCalcBalance() {
         return -(getAmount());
     }
 

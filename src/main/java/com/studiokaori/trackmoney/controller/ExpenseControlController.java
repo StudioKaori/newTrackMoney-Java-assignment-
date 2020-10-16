@@ -9,6 +9,14 @@ import com.studiokaori.trackmoney.model.CommandValidation;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * This class represents one of the mein menu, "expense control" function.
+ * It shows graphical chart of expenses sorted by categories.
+ *
+ * @author Kaori Persson
+ * @version 2020.09
+ */
+
 public class ExpenseControlController extends Controller {
 
     private SortItems sortItems;

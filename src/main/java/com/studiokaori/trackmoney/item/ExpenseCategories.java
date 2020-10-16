@@ -3,6 +3,12 @@ package com.studiokaori.trackmoney.item;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * This class provides categories for expense item.
+ *
+ * @author Kaori Persson
+ * @version 2020.09
+ */
 public class ExpenseCategories {
 
     public static final List<String> expenseCategories;

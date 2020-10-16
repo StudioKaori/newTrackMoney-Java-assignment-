@@ -11,8 +11,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * This class is the main class of the "Track Money" application.
- * "rack Money" is a very simple, text based money tracker.
+ * This class represents main menu of the TrackMoney.
+ * It shows main menu.
  *
  * @author Kaori Persson
  * @version 2020.09
@@ -89,10 +89,14 @@ public class MainController extends Controller {
 
     }
 
+    /**
+     * This method shows current balance based on the all expenses and incomes.
+     */
+
     private void printCurrentBalance() {
 
         int balance = new CalcBalance().getTotalBalance(items);
-        System.out.println("You have currently " + balance + " Kr on your account.");
+        System.out.println("\u001b[00;36m" + "You have currently " + balance + " Kr on your account." + "\u001B[0m");
         System.out.println();
 
     }

@@ -3,7 +3,7 @@ package com.studiokaori.trackmoney.model;
 import java.util.Scanner;
 
 /**
- * This class checks if the command number is valid or not.
+ * This class checks if the input from users is valid command number or not.
  */
 public class CommandValidation {
     private Scanner scanner;

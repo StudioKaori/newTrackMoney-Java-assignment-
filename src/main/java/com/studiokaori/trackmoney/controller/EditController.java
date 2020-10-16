@@ -8,8 +8,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * This class is the main class of the "Track Money" application.
- * "rack Money" is a very simple, text based money tracker.
+ * This class represents one of the mein menu, "edit" function.
+ * It allows to user to edit/delete exist expense/income item.
  *
  * @author Kaori Persson
  * @version 2020.09

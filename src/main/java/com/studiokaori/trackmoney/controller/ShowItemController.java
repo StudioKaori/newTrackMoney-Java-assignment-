@@ -9,6 +9,14 @@ import com.studiokaori.trackmoney.model.CommandValidation;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * This class represents one of the mein menu, "show item" function.
+ * It lists expenses/incomes sorted by title, date or amount.
+ *
+ * @author Kaori Persson
+ * @version 2020.09
+ */
+
 public class ShowItemController extends Controller {
 
     private SortItems sortItems;
@@ -157,7 +165,7 @@ public class ShowItemController extends Controller {
 
         for (Item item : items) {
 
-            System.out.println(item.getFormattedStringForAll());
+            System.out.println(item.getFormattedStringToShowAllIncomeExpense());
             printCount++;
 
         }

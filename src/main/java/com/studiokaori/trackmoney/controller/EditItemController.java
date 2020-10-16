@@ -6,8 +6,7 @@ import com.studiokaori.trackmoney.model.CommandValidation;
 import java.util.List;
 
 /**
- * This class is the main class of the "Track Money" application.
- * "rack Money" is a very simple, text based money tracker.
+ * This class provides basic edit/add functions and a skeletal implementation of edit/add controller class.
  *
  * @author Kaori Persson
  * @version 2020.09
@@ -25,6 +24,10 @@ public abstract class EditItemController extends Controller {
 
     }
 
+
+    /**
+     * Let user choose category of the item.
+     */
 
     protected void chooseCategory(Item item) {
 
@@ -45,6 +48,9 @@ public abstract class EditItemController extends Controller {
 
     }
 
+    /**
+     * Let user set name of the item.
+     */
     protected void setNameToItem(Item item) {
 
         System.out.println("Please input item name.");
@@ -65,6 +71,9 @@ public abstract class EditItemController extends Controller {
     }
 
 
+    /**
+     * Let user set price of the item.
+     */
     protected void setAmountToItem(Item item) {
 
         System.out.println("Please input amount of money (SEK).");

@@ -13,6 +13,14 @@ import java.util.Date;
 @JsonTypeInfo(use = JsonTypeInfo.Id.CLASS)
 @JsonIgnoreProperties(ignoreUnknown = true)
 
+
+/**
+ * This class provides basic functions and a skeletal implementation of item class.
+ *
+ * @author Kaori Persson
+ * @version 2020.09
+ */
+
 public abstract class Item {
     protected String name;
     protected int amount;
@@ -20,6 +28,10 @@ public abstract class Item {
     protected int category;
 
 
+    /**
+     * Constructs item.
+     * Called for to load saved items.
+     */
     public Item(int category, String name, int amount, Date date) {
 
         setName(name);
@@ -29,6 +41,10 @@ public abstract class Item {
 
     }
 
+    /**
+     * Constructs item.
+     * Called for newly registered item.
+     */
     public Item() {
 
         setDate(new Date());
@@ -39,6 +55,12 @@ public abstract class Item {
         return name;
     }
 
+    /**
+     * Sets the name to the item.
+     *
+     * @param name name of the item
+     * @throws IllegalArgumentException is thrown if the name is empty.
+     */
     public void setName(String name) throws IllegalArgumentException {
 
         if (!name.equals("")) {
@@ -53,6 +75,13 @@ public abstract class Item {
         return amount;
     }
 
+    /**
+     * Sets the price to the item.
+     * Called for Json mapping.(loading saved item)
+     *
+     * @param amount price of the item
+     * @throws IllegalArgumentException is thrown if the price is negative or zero.
+     */
     public void setAmount(int amount) throws IllegalArgumentException {
 
         // exception will be thrown when amount is negative.
@@ -64,6 +93,13 @@ public abstract class Item {
 
     }
 
+    /**
+     * Sets the price to the item.
+     * Called for user input.
+     *
+     * @param strAmount price of the item (String)
+     * @throws NumberFormatException is thrown if the price is not valid number.
+     */
     public void setAmount(String strAmount) throws NumberFormatException {
 
         // exception will be thrown when boxing is failed.
@@ -81,12 +117,19 @@ public abstract class Item {
         this.date = date;
     }
 
+    /**
+     * Sets the date to the item.
+     * Called for user input.
+     *
+     * @param stringDate date of the item (String)
+     * @throws ParseException is thrown if the date is not valid.
+     */
     @JsonIgnore
     public void setDate(String stringDate) throws ParseException {
 
         SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
         Date date = dateFormat.parse(stringDate);
-        this.date = date;
+        setDate(date);
 
     }
 
@@ -98,18 +141,40 @@ public abstract class Item {
         this.category = category;
     }
 
+    /**
+     * Returns formatted text of the item
+     *
+     * @param format
+     * @return formatted text of the item
+     */
     @JsonIgnore
     public abstract String getFormattedString(String format);
 
+    /**
+     * Returns formatted text of the item using default format.
+     *
+     * @return formatted text of the item
+     */
     @JsonIgnore
     public abstract String getFormattedString();
 
+    /**
+     * Returns formatted text of the item for the occasion to show all incomes and expenses.
+     *
+     * @return formatted text of the item
+     */
     @JsonIgnore
-    public abstract String getFormattedStringForAll();
+    public abstract String getFormattedStringToShowAllIncomeExpense();
 
 
-    //return amount of money to calculate
+    /**
+     * Returns amount of money to calculate total balance.
+     * If the item belongs to expense, return negative number.
+     * if the item belongs to income, positive number.
+     *
+     * @return amount of money
+     */
     @JsonIgnore
-    public abstract int getAmountToCalc();
+    public abstract int getAmountToCalcBalance();
 
 }

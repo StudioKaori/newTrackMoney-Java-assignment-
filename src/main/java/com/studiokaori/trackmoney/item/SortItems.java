@@ -4,6 +4,12 @@ import java.util.Comparator;
 import java.util.List;
 import java.util.stream.Collectors;
 
+/**
+ * This class provide sort function for list of items.
+ *
+ * @author Kaori Persson
+ * @version 2020.09
+ */
 public class SortItems {
 
 

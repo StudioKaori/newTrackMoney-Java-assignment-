@@ -9,8 +9,21 @@ import java.io.*;
 import java.nio.file.NoSuchFileException;
 import java.util.List;
 
+/**
+ * This class provides save/load items function.
+ */
 public class SaveLoadItems {
 
+
+    /**
+     * It loads saved items from Json format file and returns list of items.
+     *
+     * @param items
+     * @param fileName
+     * @return list of items
+     * @throws IOException
+     * @throws NoSuchFileException
+     */
     public List<Item> loadSavedItems(List<Item> items, String fileName) throws IOException, NoSuchFileException {
 
         File file = new File(fileName);
@@ -41,6 +54,13 @@ public class SaveLoadItems {
     }
 
 
+    /**
+     * This method maps item's field members from json format text.
+     *
+     * @param json
+     * @return
+     * @throws IOException
+     */
     public Item mapToItem(String json) throws IOException {
 
         ObjectMapper mapper = new ObjectMapper();
@@ -72,6 +92,13 @@ public class SaveLoadItems {
     }
 
 
+    /**
+     * This method creates Json format text for save items.
+     *
+     * @param items item to save
+     * @return json format text
+     * @throws JsonProcessingException
+     */
     public String createJsonString(List<Item> items) throws JsonProcessingException {
 
         StringBuilder stringBuilder = new StringBuilder();

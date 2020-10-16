@@ -36,6 +36,8 @@ These inherite Item class. These two are kept in the "items" array and their sta
 The tests were created to make sure their behavior in the run-time.
 
 
+## Class diagram
+![Track_money_class_diagram-pdf](/uploads/42b626404e9f10784edd211c3dd02ed0/Track_money_class_diagram-pdf.png)
 
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)

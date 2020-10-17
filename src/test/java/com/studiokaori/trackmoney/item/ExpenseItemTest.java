@@ -30,19 +30,19 @@ class ExpenseItemTest {
 
     @Test
     void getFormattedStringForAll() {
-        String result = expenseItem.getFormattedStringForAll();
+        String result = expenseItem.getFormattedStringToShowAllIncomeExpense();
         assertEquals(" 2020-10-05 | Food           | test name                      |         300 |             |", result);
     }
 
     @Test
     void getFormattedString() {
-        String result = expenseItem.getFormattedStringForAll();
+        String result = expenseItem.getFormattedStringToShowAllIncomeExpense();
         assertEquals(" 2020-10-05 | Food           | test name                      |         300 |             |", result);
     }
 
     @Test
     void getAmountToCalc() {
-        int result = expenseItem.getAmountToCalc();
+        int result = expenseItem.getAmountToCalcBalance();
         assertEquals(-300, result);
     }
 

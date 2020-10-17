@@ -9,7 +9,7 @@ public class CommandValidation {
     private Scanner scanner;
 
     public CommandValidation() {
-        scanner = new Scanner(System.in);
+        scanner = MyScanner.getInstance();
     }
 
     /**

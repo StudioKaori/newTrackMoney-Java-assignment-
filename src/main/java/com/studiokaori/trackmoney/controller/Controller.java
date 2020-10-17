@@ -2,6 +2,7 @@ package com.studiokaori.trackmoney.controller;
 
 import com.studiokaori.trackmoney.item.Item;
 import com.studiokaori.trackmoney.model.CommandValidation;
+import com.studiokaori.trackmoney.model.MyScanner;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -38,7 +39,7 @@ public abstract class Controller {
     public Controller(List<Item> items) {
 
         this.items = items;
-        scanner = new Scanner(System.in);
+        scanner = MyScanner.getInstance();
 
     }
 

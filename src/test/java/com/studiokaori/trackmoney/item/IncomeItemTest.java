@@ -38,7 +38,7 @@ class IncomeItemTest {
 
     @Test
     void getAmountToCalc() {
-        int result = incomeItem.getAmountToCalc();
+        int result = incomeItem.getAmountToCalcBalance();
         assertEquals(300, result);
     }
 

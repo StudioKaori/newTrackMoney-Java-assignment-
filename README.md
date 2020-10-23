@@ -37,6 +37,19 @@ Please take a look 'javadoc' in the repo.
 ## Manual
 Please take a look 'Track_money_manual.pdf' in the repo.
 
+## Updates
+2020.10.23 class diagram update for new MyScanner class
+2020.10.22 Merge singletonScanner branch to master branch
+2020.10.22 Update Javadoc for new MyScanner class
+2020.10.17 Add static MyScanner class to avoid having too many scanner instances
+
+## Bug/issues
+No bug/issues reported.
+
+## Milestones
+[Done] 1.Use of milestones for planning
+[Done] 2.Use of issues for features and bug tracking
+For futher information, please take a look at milestone in the repo.
 
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)

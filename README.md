@@ -4,9 +4,16 @@
 
 Track Money is a simple money tracker. You can follow all expenses and incomes.
 
-## Installation
+## Build tool
 
-Build tool is Maven.
+Maven
+
+## Installation
+1. Clone the project from the repo to your local computer.  
+2. Initialize the project by Maven, and compile it.
+
+## User manual
+Please take a look '[Track_money_manual.pdf](https://git.2020.school/kaori_persson/newtrackmoney/-/blob/master/Track_money_manual.pdf)' in the repo.
 
 ## SDK version
 
@@ -16,11 +23,7 @@ Build tool is Maven.
 
 JUnit 5.
 
-```bash
-mvn test
-```
-ExpenseItemTest and IncomeItemTest are included.
-
+ExpenseItemTest and IncomeItemTest are included.  
 These inherite Item class. These two are kept in the "items" array and their static type is Item class. However, they behave differently in run-time. (i.e. having different item categories, returning the different amount of values.)
 
 The tests were created to make sure their behavior in the run-time.
@@ -29,14 +32,24 @@ CalcBalanceTest, SaveLoadItemsTest, MyScanner tests are done.
 
 
 ## Class diagram
-Please take a look 'Track_money_class_diagram.pdf' in the repo.
+Please take a look '[Track_money_class_diagram.pdf](https://git.2020.school/kaori_persson/newtrackmoney/-/blob/master/Track_money_class_diagram.pdf)' in the repo.
 
 ## Javadoc
-Please take a look 'javadoc' in the repo.
+Please take a look '[javadoc](https://git.2020.school/kaori_persson/newtrackmoney/-/tree/master/Javadoc)' in the repo.
 
-## Manual
-Please take a look 'Track_money_manual.pdf' in the repo.
+## Updates
+2020.10.23 class diagram update for new MyScanner class  
+2020.10.22 Merge singletonScanner branch to master branch  
+2020.10.22 Update Javadoc for new MyScanner class  
+2020.10.17 Add static MyScanner class to avoid having too many scanner instances  
 
+## Bug/issues
+No bug/issues reported.
+
+## Milestones
+[Done] 1.Use of milestones for planning  
+[Done] 2.Use of issues for features and bug tracking  
+For futher information, please take a look at milestone in the repo.
 
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)

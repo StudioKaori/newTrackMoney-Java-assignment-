@@ -4,9 +4,16 @@
 
 Track Money is a simple money tracker. You can follow all expenses and incomes.
 
-## Installation
+## Build tool
 
-Build tool is Maven.
+Maven
+
+## Installation
+1. Clone the project from the repo to your local computer.  
+2. Initialize the project by Maven, and compile it.
+
+## User manual
+Please take a look '[Track_money_manual.pdf](https://git.2020.school/kaori_persson/newtrackmoney/-/blob/master/Track_money_manual.pdf)' in the repo.
 
 ## SDK version
 
@@ -14,10 +21,9 @@ Build tool is Maven.
 
 ## JUnit test
 
-JUnit 5.(Build tool, Maven)
+JUnit 5.
 
-ExpenseItemTest and IncomeItemTest are included.
-
+ExpenseItemTest and IncomeItemTest are included.  
 These inherite Item class. These two are kept in the "items" array and their static type is Item class. However, they behave differently in run-time. (i.e. having different item categories, returning the different amount of values.)
 
 The tests were created to make sure their behavior in the run-time.
@@ -30,9 +36,6 @@ Please take a look '[Track_money_class_diagram.pdf](https://git.2020.school/kaor
 
 ## Javadoc
 Please take a look '[javadoc](https://git.2020.school/kaori_persson/newtrackmoney/-/tree/master/Javadoc)' in the repo.
-
-## Manual
-Please take a look '[Track_money_manual.pdf](https://git.2020.school/kaori_persson/newtrackmoney/-/blob/master/Track_money_manual.pdf)' in the repo.
 
 ## Updates
 2020.10.23 class diagram update for new MyScanner class  
